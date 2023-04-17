@@ -1,0 +1,16 @@
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    &__right {
+        font-size: 2rem;
+    }
+}
