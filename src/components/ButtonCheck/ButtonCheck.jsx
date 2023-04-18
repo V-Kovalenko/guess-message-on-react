@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import Context from "../Context/Context";
+import './ButtonCheck.scss'
 
 const ButtonCheck = () => {
     const {stateScore} = useContext(Context)
@@ -15,7 +16,8 @@ const ButtonCheck = () => {
 
     const onClick = () => {
         setCheckInput(parseInt(stateInput))
-         if (secretNumber === +stateInput) {
+        if (!stateInput){
+        }  else if (secretNumber === +stateInput) {
             if (stateScore > highStateScore) {
                 setHighStateScore(stateScore)
             }

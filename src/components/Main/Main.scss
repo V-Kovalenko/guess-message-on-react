@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media screen and (max-width: 540px){
+            flex-direction: column;
+    }
     &__left {
         display: flex;
         flex-direction: column;
@@ -12,5 +15,14 @@
     }
     &__right {
         font-size: 2rem;
+        @media screen and (max-width: 540px){
+            font-size: 1.4rem;
+        }
     }
 }
+//@media screen and (max-width: 540px){
+//    .main {
+//        flex-direction: column;
+//        background-color: red;
+//    }
+//}

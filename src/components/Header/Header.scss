@@ -6,11 +6,22 @@
   align-items: center;
   border-bottom: .5rem solid white;
   margin-bottom: 12rem;
+  @media screen and (max-width: 540px) {
+    margin-bottom: 4rem;
+  }
   &__h1 {
     position: absolute;
     top: 5rem;
     left: 50%;
     transform: translate(-50%, 50%);
+    @media screen and (max-width: 470px) {
+      font-size: 1.9rem;
+      width: max-content;
+    }
+    @media screen and (max-width: 386px) {
+      font-size: 1.6rem;
+     width: max-content;
+    }
   }
   &__question {
     background: #fff;
@@ -24,10 +35,27 @@
     left: 50%;
     transform: translate(-50%, 50%);
     top: 9rem;
+    @media screen and (max-width: 540px){
+      top: 10.4rem;
+    }
   }
   &__question_size {
     font-size: 5rem;
     top: 6rem;
     width: 30rem;
+    @media screen and (max-width: 570px){
+      width: 15rem;
+    }
+    @media screen and (max-width: 540px){
+      top: 10.9rem;
+      width: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 4rem;
+      text-align: center;
+      font-size: 4rem;
+
+    }
   }
 }
