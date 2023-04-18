@@ -61,7 +61,6 @@ function App() {
             getGameMessage
         }}>
             <div className={isGameFinished ? "App App_green" : "App"}>
-                {checkInput} {secretNumber}
                 <Header/>
                 <Main/>
             </div>

@@ -7,14 +7,12 @@ import Context from "../Context/Context";
 
 const Main = () => {
     const {onChangeStateInput} = useContext(Context)
-    const {guessMessage} = useContext(Context)
     const {stateScore} = useContext(Context)
     const {highStateScore} = useContext(Context)
     const {stateInput} = useContext(Context)
     const {getGameMessage} = useContext(Context)
     return (
         <div>
-
             <div className="main">
                 <section className="main__left">
                     <Input onChange={onChangeStateInput} value={stateInput}/>

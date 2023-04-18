@@ -15,17 +15,13 @@ const ButtonCheck = () => {
 
     const onClick = () => {
         setCheckInput(parseInt(stateInput))
-        if (!stateInput){
-        }  else if (secretNumber === +stateInput) {
-
+         if (secretNumber === +stateInput) {
             if (stateScore > highStateScore) {
                 setHighStateScore(stateScore)
             }
         } else if (secretNumber !== +stateInput) {
-
             if (stateScore < 2) {
                 setStateScore(0)
-
             } else {
                 setStateScore(stateScore - 1)
                 setStateInput('')
