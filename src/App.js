@@ -35,7 +35,6 @@ function App() {
         }
     }
     const isGameFinished = useMemo(() => {
-        console.log(checkInput === secretNumber)
         return  checkInput === secretNumber
 
     },[checkInput, secretNumber])

@@ -33,8 +33,7 @@ const ButtonCheck = () => {
     return (
         <div>
             {!isGameFinished? <button className='btn' onClick={onClick}>Проверить!</button>
-            :<button className='button-disabled' >Проверить!</button>}
-
+            :<button className='btn button-disabled' >Проверить!</button>}
         </div>
 
     );
